@@ -95,5 +95,12 @@ if (evt.target === topMenuEl){
 } else {
   console.log(evt.target)
 }
+// 1. The event listener should add the active class to the <a> element that was clicked, unless it was already active, in which case it should remove it.
+const clicked = evt.target;
+clicked.classList.toggle('active');
+
+// 2. The event listener should remove the active class from each other <a> element in topMenuLinks - whether the active class exists or not.
+// Hint: Removing a non-existent class from an element does not cause an error!
 })
-// Log the content of the <a> to verify the handler is working.
+
+
