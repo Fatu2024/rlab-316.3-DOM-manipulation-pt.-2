@@ -101,6 +101,12 @@ clicked.classList.toggle('active');
 
 // 2. The event listener should remove the active class from each other <a> element in topMenuLinks - whether the active class exists or not.
 // Hint: Removing a non-existent class from an element does not cause an error!
-})
+topMenulinks.forEach(link => {
+  if (link !== evt.target){
+    link.classList.remove('active')
+  }
+});
+}
+)
 
 
